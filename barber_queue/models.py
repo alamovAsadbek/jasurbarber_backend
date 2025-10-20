@@ -8,6 +8,7 @@ class Queue(models.Model):
     service = models.CharField(max_length=100)
     total = models.DecimalField(max_digits=12, decimal_places=2, default=0)
     date = models.DateTimeField()  # foydalanuvchi kiritadigan sana + soat
+    whom = models.CharField(max_length=100)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
 
